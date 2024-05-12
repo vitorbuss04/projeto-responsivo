@@ -56,14 +56,15 @@
 
     <section class="carrossel">
         <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
-        <!-- Slider main container -->
+        <!-- Container principal do carrossel -->
         
         <div class="swiper">
-            <!-- If we need pagination -->
+            <!-- paginação -->
             <div class="swiper-pagination"></div>
 
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
+
       <!-- Slides -->
       <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot na alura boot"></div>
 
@@ -79,13 +80,42 @@
       
     </div>
     
-  
-    <!-- If we need navigation buttons -->
+    <!-- Botões de navegação -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
 
-  </div>
-    </section>
+  
+
+        </div>
+
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descricao">
+                <!-- 1ª coluna -->
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <!-- 2ª coluna -->
+                <img src="assets/Angular.svg" alt="Logo do Angular" class="descricao__imagem">
+            </div>
+            <!-- 2ª linha -->
+            <div class="card__botoes">
+                <!-- 1ª coluna -->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="assets/Favoritos.svg" alt="favoritar livro"></li>
+                    <li class="botoes__item"><img src="assets/Compras.svg" alt="comprar livro"></li>
+                </ul>
+
+                <!-- 2ª coluna -->
+                <button class="card__button">Saiba mais</button>
+            </div>
+        </div>
+
+
+
+
 
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'

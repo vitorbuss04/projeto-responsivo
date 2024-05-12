@@ -199,4 +199,59 @@ body h1 {
 .swiper-pagination {
   position: initial;
   margin: 0.5em 0;
+}
+
+.card {
+  background-color: #FFFFFF;
+  margin: 20px;
+  margin-top: 0;
+  padding: 15px;
+}
+.card .card__descricao {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.card .card__descricao .descricao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card .card__descricao .descricao .descricao__titulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #EB9B00;
+}
+.card .card__descricao .descricao .descricao__titulo-livro {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #002F52;
+}
+.card .card__descricao .descricao .descricao__texto {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #002F52;
+}
+.card .card__botoes {
+  display: flex;
+  justify-content: space-between;
+}
+.card .card__botoes .botoes {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 10px;
+}
+.card .card__botoes .card__button {
+  width: 50%;
+  background-color: #EB9B00;
+  border: none;
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

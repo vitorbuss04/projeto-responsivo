@@ -1,0 +1,55 @@
+@use '../abstract/reset';
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+
+.card {
+    background-color: variaveis.$branco;
+    margin: 20px;
+    margin-top: 0;
+    padding: 15px;
+
+    .card__descricao {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        .descricao {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .descricao__titulo {
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$laranja)
+            }
+
+            .descricao__titulo-livro {
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, #002F52)
+            }
+
+            .descricao__texto {
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, #002F52)
+            }
+        }
+    }
+    
+    .card__botoes {
+        display: flex;
+        justify-content: space-between;
+
+        .botoes {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-left: 10px;
+        }
+
+        .card__button {
+            width: 50%;
+            background-color: variaveis.$laranja;
+            border: none;
+            padding: 15px;
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, white)
+        }
+    }
+}
