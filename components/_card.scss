@@ -21,6 +21,10 @@
             flex-direction: column;
             justify-content: space-around;
 
+            .descriacao__estrelas-titulo {
+                width: 50%;
+            }
+
             .descricao__titulo {
                 margin: .3em 0;
                 @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 15px, 700, variaveis.$laranja);

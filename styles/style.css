@@ -219,6 +219,9 @@ body h1 {
   flex-direction: column;
   justify-content: space-around;
 }
+.card .card__descricao .descricao .descriacao__estrelas-titulo {
+  width: 50%;
+}
 .card .card__descricao .descricao .descricao__titulo {
   margin: 0.3em 0;
   font-family: "Poppins", sans-serif;
