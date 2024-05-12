@@ -20,15 +20,15 @@
             justify-content: space-around;
 
             .descricao__titulo {
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$laranja)
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 700, variaveis.$laranja)
             }
 
             .descricao__titulo-livro {
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, #002F52)
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 700, #002F52)
             }
 
             .descricao__texto {
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, #002F52)
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 400, #002F52)
             }
         }
     }

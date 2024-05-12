@@ -219,19 +219,19 @@ body h1 {
 }
 .card .card__descricao .descricao .descricao__titulo {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #EB9B00;
 }
 .card .card__descricao .descricao .descricao__titulo-livro {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #002F52;
 }
 .card .card__descricao .descricao .descricao__texto {
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #002F52;
 }
