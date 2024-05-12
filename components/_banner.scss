@@ -1,0 +1,44 @@
+@use '../abstract/reset';
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+.banner {
+    background-image: linear-gradient(97deg, #002F52, #326589);
+    text-align: center;
+    padding: 32px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+
+    .banner__titulo {
+        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 700, variaveis.$branco);
+    }
+
+    .banner__texto {
+        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 500, variaveis.$branco);
+
+
+
+    }
+
+    .banner__pesquisa {
+        padding: 1em;
+
+        border: 1px solid white;
+        border-radius: 70px;
+        background-color: transparent;
+        color: white;
+
+        
+
+        &::placeholder {
+            color: white;
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$branco);
+            background: url(../assets/Lupa.svg);
+            background-repeat: no-repeat;
+            background-position: 1em;
+            text-align: center;
+        }
+    }
+}

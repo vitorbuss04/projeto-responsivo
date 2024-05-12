@@ -1,0 +1,6 @@
+@mixin ff-fs-fw-c($f-fam, $f-size, $f-wgth, $color) {
+    font-family: $f-fam;
+    font-size: $f-size;
+    font-weight: $f-wgth;
+    color: $color;
+}

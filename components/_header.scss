@@ -1,0 +1,68 @@
+@use '../abstract/reset';
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+
+.cabecalho {
+    background-color: variaveis.$branco;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        .lista-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            background-color: white;
+            padding: 24px 24px 16px 24px;
+            width: 60vw;
+            box-shadow: 0px 20px 20px #00000013 ;
+            z-index: 2;
+
+            .lista-menu__titulo {
+                padding: 16px;
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$laranja);
+            }
+
+            .lista-menu__item {
+                padding: 16px;
+                .lista-menu__link {
+                    @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 500, #002F52);
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    background: variaveis.$degrade-menu;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    
+                }
+            }
+        }
+
+        .container__botao {
+            display: none;
+        }
+
+        .container__botao:checked ~ .lista-menu{
+            display: block;
+        }
+
+    }
+
+    .container__imagem {
+        margin: 1em;
+    }
+
+    .cabecalho__menu-hamburguer {
+        width: 32px;
+        height: 24px;
+        background-image: url(../assets/Menu.svg);
+        display: inline-block
+    }
+
+}

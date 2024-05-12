@@ -1,0 +1,10 @@
+@use '../abstract/variaveis';
+@use '../abstract/reset';
+
+body {
+    background-color: variaveis.$bg-color;
+
+    h1 {
+        background-color: white;
+    }
+}
