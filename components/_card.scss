@@ -5,13 +5,14 @@
 
 .card {
     background-color: variaveis.$branco;
-    margin: 50px;
+    margin: 20px;
     margin-top: 0;
     padding: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.164);
+    border-radius: 15px;
 
     .card__descricao {
         display: flex;
-        justify-content: space-between;
         margin-bottom: 30px;
 
         .descricao {
@@ -20,15 +21,18 @@
             justify-content: space-around;
 
             .descricao__titulo {
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 700, variaveis.$laranja)
+                margin: .3em 0;
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$laranja);
             }
 
             .descricao__titulo-livro {
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 700, #002F52)
+                margin: .3em 0;
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, #002F52);
             }
 
             .descricao__texto {
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 400, #002F52)
+                margin: .3em 0;
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, #002F52);
             }
         }
     }
@@ -40,12 +44,15 @@
         .botoes {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 30px;
             margin-left: 10px;
         }
 
-        .card__button {
+        .card__ancora {
             width: 50%;
+            text-align: center;
+            text-decoration: none;
             background-color: variaveis.$laranja;
             border: none;
             padding: 15px;
