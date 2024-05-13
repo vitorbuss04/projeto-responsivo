@@ -8,6 +8,8 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    padding: 20px;
+
 
 
     .container {
@@ -52,7 +54,9 @@
             display: block;
         }
 
+        
     }
+    
 
     .container__imagem {
         margin: 1em;
@@ -63,11 +67,79 @@
         height: 24px;
         background-image: url(../assets/Menu.svg);
         display: inline-block
+        
     }
-
 }
+.container__titulo {
+    display: none;
+}
+
+.opcoes {
+    display: none;
+}
+
 
 
 @media screen and (min-width: 1024px) {
+    .cabecalho {
+
+        .container__botao {
+            display: none;
+        }
+        .lista-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            background-color: variaveis.$branco;
+            padding: 0;
+            box-shadow: 0px 20px 20px #00000013 ;
+            z-index: 2;
+
+            .lista-menu__item {
+                padding: 20px 40px;
+                .lista-menu__link {
+                    @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 26px, 500, variaveis.$ft-azul);
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    
+                    
+                }
+            }
+        }
+
+        .container__botao:checked ~ .lista-menu {
+            display: block;
+        }
+
+        .cabecalho__menu-hamburguer {
+           display: none
+        } 
+
+        .container__titulo {
+            @include mixins.ff-fs-fw-c(variaveis.$ft-titulo, 30px, 400, variaveis.$preto);
+            height: 80%;
+            display: flex;
+            align-items: center;
+            padding-top: 15px;
     
-}
+            .negrito {
+                font-weight: 700;
+            }
+        }
+    
+            .opcoes {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                .opcoes__item , .opcoes__link{
+                    text-decoration: none;
+                    @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 26px, 400, variaveis.$ft-preto);
+                    text-transform: uppercase;
+                }
+            }
+        .coracao {
+            display: none;
+        }
+        }
+    }

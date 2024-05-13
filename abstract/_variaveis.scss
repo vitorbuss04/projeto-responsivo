@@ -1,11 +1,20 @@
 @use 'fontes-importadas';
 
+//cores
 $bg-color: #EBECEE;
 $branco: #FFFFFF;
-$ft-branco: #FFFFFF;
 $laranja: #EB9B00;
-$ft-laranja: #EB9B00;
 $azul: #002F52;
-$ft-azul: #002f52;
+$preto: #000000;
 $degrade-menu: linear-gradient(97deg, #002F52, #326589);
+
+//cores para fontes
+$ft-laranja: #EB9B00;
+$ft-branco: #ffffff;
+$ft-azul: #002f52;
+$ft-preto: #000000;
+
+
+//fontes
 $ft-textos: 'Poppins', sans-serif;
+$ft-titulo: 'Josefin Sans', sans-serif;
