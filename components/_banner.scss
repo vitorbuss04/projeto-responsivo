@@ -72,7 +72,11 @@
             background-color: variaveis.$laranja;
             border: none;
             padding: 20px;
-            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, white)
+
+            a {
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, white);
+                text-decoration:none;
+            }
         }
     }
     
