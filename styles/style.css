@@ -169,6 +169,40 @@ body h1 {
   text-align: center;
 }
 
+.banner-topicos {
+  background-image: linear-gradient(97deg, #002F52, #326589);
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.banner-topicos .banner-topicos__titulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFFFFF;
+  padding: 10px;
+}
+.banner-topicos .banner-topicos__itens {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.banner-topicos .banner-topicos__itens .banner-topicos__item {
+  margin: 0.3em;
+  text-align: center;
+  text-decoration: none;
+  background-color: #EB9B00;
+  border: none;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
 .carrossel__titulo {
   color: #EB9B00;
   background: #FFFFFF;
