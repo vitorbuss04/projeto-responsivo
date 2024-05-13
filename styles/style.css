@@ -351,8 +351,7 @@ body h1 {
   .banner-topicos {
     background-image: linear-gradient(97deg, #002F52, #326589);
     text-align: center;
-    padding: 10px 300px;
-    height: 330px;
+    padding: 10px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -360,7 +359,7 @@ body h1 {
   }
   .banner-topicos .banner-topicos__titulo {
     font-family: "Poppins", sans-serif;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 300;
     color: #ffffff;
     padding: 10px;
@@ -372,16 +371,16 @@ body h1 {
     justify-content: center;
   }
   .banner-topicos .banner-topicos__itens .banner-topicos__item {
-    margin: 0.3em;
+    margin: 0.5em;
     text-align: center;
     text-decoration: none;
     background-color: #EB9B00;
     border: none;
-    padding: 20px;
+    padding: 30px;
   }
   .banner-topicos .banner-topicos__itens .banner-topicos__item a {
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
+    font-size: 27px;
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
@@ -391,6 +390,7 @@ body h1 {
     padding: 32px 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
   }
   .banner-email .banner-email__titulo {
