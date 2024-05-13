@@ -26,13 +26,13 @@
 
             .lista-menu__titulo {
                 padding: 16px;
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$laranja);
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$ft-laranja);
             }
 
             .lista-menu__item {
                 padding: 16px;
                 .lista-menu__link {
-                    @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 500, variaveis.$azul);
+                    @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 500, variaveis.$ft-azul);
                     text-decoration: none;
                     text-transform: uppercase;
                     background: variaveis.$degrade-menu;

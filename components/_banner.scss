@@ -13,11 +13,11 @@
 
 
     .banner__titulo {
-        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 700, variaveis.$branco);
+        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 700, variaveis.$ft-branco);
     }
 
     .banner__texto {
-        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 500, variaveis.$branco);
+        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 500, variaveis.$ft-branco);
 
 
 
@@ -35,7 +35,7 @@
 
         &::placeholder {
             color: variaveis.$branco;
-            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$branco);
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$ft-branco);
             background: url(../assets/Lupa.svg);
             background-repeat: no-repeat;
             background-position: 1em;
@@ -55,7 +55,7 @@
 
 
     .banner-topicos__titulo {
-        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 300, variaveis.$branco);
+        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 300, variaveis.$ft-branco);
         padding: 10px;
     }
 
@@ -74,7 +74,7 @@
             padding: 20px;
 
             a {
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$branco);
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$ft-branco);
                 text-decoration:none;
             }
         }
@@ -93,11 +93,11 @@
 
 
     .banner-email__titulo {
-        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 700, variaveis.$azul);
+        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 700, variaveis.$ft-azul);
     }
 
     .banner-email__texto {
-        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 500, variaveis.$azul);
+        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 500, variaveis.$ft-azul);
         @include mixins.fonte-degrade();
     }
 
@@ -113,7 +113,7 @@
 
         &::placeholder {
             color: variaveis.$azul;
-            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$azul);
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$ft-azul);
             background: url(../assets/Email.svg);
             background-repeat: no-repeat;
             background-position: 1em;

@@ -94,7 +94,7 @@ body h1 {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #002F52;
+  color: #002f52;
   text-decoration: none;
   text-transform: uppercase;
   background: linear-gradient(97deg, #002F52, #326589);
@@ -219,13 +219,13 @@ body h1 {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color: #002F52;
+  color: #002f52;
 }
 .banner-email .banner-email__texto {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #002F52;
+  color: #002f52;
   background: linear-gradient(97deg, #002F52, #326589);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -243,7 +243,7 @@ body h1 {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #002F52;
+  color: #002f52;
   background: url(../assets/Email.svg);
   background-repeat: no-repeat;
   background-position: 1em;
@@ -254,7 +254,7 @@ body h1 {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #002F52;
+  color: #002f52;
   background: url(../assets/Email.svg);
   background-repeat: no-repeat;
   background-position: 1em;
@@ -326,14 +326,14 @@ body h1 {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 700;
-  color: #002F52;
+  color: #002f52;
 }
 .card .card__descricao .descricao .descricao__texto {
   margin: 0.3em 0;
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-weight: 400;
-  color: #002F52;
+  color: #002f52;
 }
 .card .card__descricao .descricao .descricao__imagem {
   width: 100%;
@@ -371,7 +371,7 @@ body h1 {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: #002F52;
+  color: #002f52;
   background: linear-gradient(97deg, #002F52, #326589);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -27,17 +27,17 @@
 
             .descricao__titulo {
                 margin: .3em 0;
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 15px, 700, variaveis.$laranja);
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 15px, 700, variaveis.$ft-laranja);
             }
 
             .descricao__titulo-livro {
                 margin: .3em 0;
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 15px, 700, variaveis.$azul);
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 15px, 700, variaveis.$ft-azul);
             }
 
             .descricao__texto {
                 margin: .3em 0;
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 13px, 400, variaveis.$azul);
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 13px, 400, variaveis.$ft-azul);
             }
 
             .descricao__imagem {
@@ -65,7 +65,7 @@
             background-color: variaveis.$laranja;
             border: none;
             padding: 20px 34px;
-            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$branco)
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$ft-branco)
         }
     }
 }
