@@ -1,6 +1,15 @@
+@use 'variaveis';
+
 @mixin ff-fs-fw-c($f-fam, $f-size, $f-wgth, $color) {
     font-family: $f-fam;
     font-size: $f-size;
     font-weight: $f-wgth;
     color: $color;
+}
+
+@mixin fonte-degrade() {
+    background: variaveis.$degrade-menu;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }

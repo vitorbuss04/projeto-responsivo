@@ -32,12 +32,12 @@
 
             .descricao__titulo-livro {
                 margin: .3em 0;
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 15px, 700, #002F52);
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 15px, 700, variaveis.$azul);
             }
 
             .descricao__texto {
                 margin: .3em 0;
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 13px, 400, #002F52);
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 13px, 400, variaveis.$azul);
             }
 
             .descricao__imagem {
@@ -65,7 +65,7 @@
             background-color: variaveis.$laranja;
             border: none;
             padding: 20px 34px;
-            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, white)
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$branco)
         }
     }
 }
