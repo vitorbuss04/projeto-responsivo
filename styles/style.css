@@ -204,6 +204,56 @@ body h1 {
   color: white;
 }
 
+.banner-email {
+  background: #FFFFFF;
+  padding: 32px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140px;
+}
+.banner-email .banner-email__titulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #002F52;
+}
+.banner-email .banner-email__texto {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #002F52;
+}
+.banner-email .banner-email__pesquisa {
+  padding: 1em;
+  border: 1px solid #002F52;
+  border-radius: 70px;
+  background-color: transparent;
+  color: #002F52;
+}
+.banner-email .banner-email__pesquisa::-moz-placeholder {
+  color: #002F52;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #002F52;
+  background: url(../assets/Email.svg);
+  background-repeat: no-repeat;
+  background-position: 1em;
+  text-align: center;
+}
+.banner-email .banner-email__pesquisa::placeholder {
+  color: #002F52;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #002F52;
+  background: url(../assets/Email.svg);
+  background-repeat: no-repeat;
+  background-position: 1em;
+  text-align: center;
+}
+
 .carrossel__titulo {
   color: #EB9B00;
   background: #FFFFFF;

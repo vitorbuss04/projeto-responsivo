@@ -77,3 +77,45 @@
     }
     
 }
+
+
+.banner-email {
+    background: variaveis.$branco;
+    padding: 32px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+
+
+    .banner-email__titulo {
+        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 700, #002F52);
+    }
+
+    .banner-email__texto {
+        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 500, #002F52);
+
+
+
+    }
+
+    .banner-email__pesquisa {
+        padding: 1em;
+
+        border: 1px solid #002F52;
+        border-radius: 70px;
+        background-color: transparent;
+        color: #002F52;
+
+        
+
+        &::placeholder {
+            color: #002F52;
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, #002F52);
+            background: url(../assets/Email.svg);
+            background-repeat: no-repeat;
+            background-position: 1em;
+            text-align: center;
+        }
+    }
+}
