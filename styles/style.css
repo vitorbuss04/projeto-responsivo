@@ -331,6 +331,115 @@ body h1 {
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .banner {
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+  }
+  .banner .banner__titulo {
+    font-size: 36px;
+  }
+  .banner .banner__texto {
+    font-size: 18px;
+  }
+  .banner .banner__pesquisa {
+    width: 50%;
+  }
+  .banner-topicos {
+    background-image: linear-gradient(97deg, #002F52, #326589);
+    text-align: center;
+    padding: 10px 300px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+  .banner-topicos .banner-topicos__titulo {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 10px;
+  }
+  .banner-topicos .banner-topicos__itens {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-topicos .banner-topicos__itens .banner-topicos__item {
+    margin: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    background-color: #EB9B00;
+    border: none;
+    padding: 20px;
+  }
+  .banner-topicos .banner-topicos__itens .banner-topicos__item a {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .banner-email {
+    background: #FFFFFF;
+    padding: 32px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .banner-email .banner-email__titulo {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #002f52;
+  }
+  .banner-email .banner-email__texto {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #002f52;
+    background: linear-gradient(97deg, #002F52, #326589);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .banner-email .banner-email__pesquisa {
+    padding: 1em;
+    width: 50%;
+    border: 1px solid #002F52;
+    border-radius: 70px;
+    background-color: transparent;
+    color: #002F52;
+  }
+  .banner-email .banner-email__pesquisa::-moz-placeholder {
+    color: #002F52;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #002f52;
+    background: url(../assets/Email.svg);
+    background-repeat: no-repeat;
+    background-position: 1em;
+    text-align: center;
+  }
+  .banner-email .banner-email__pesquisa::placeholder {
+    color: #002F52;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #002f52;
+    background: url(../assets/Email.svg);
+    background-repeat: no-repeat;
+    background-position: 1em;
+    text-align: center;
+  }
+}
 .carrossel__titulo {
   color: #EB9B00;
   background: #FFFFFF;

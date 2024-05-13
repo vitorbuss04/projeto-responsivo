@@ -121,3 +121,102 @@
         }
     }
 }
+
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        height: 330px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+        .banner__titulo {
+            font-size: 36px;
+        }
+
+        .banner__texto {
+            font-size: 18px;
+        }
+
+        .banner__pesquisa {
+            width: 50%;
+        }
+    }
+
+
+    .banner-topicos {
+        background-image: variaveis.$degrade-menu;
+        text-align: center;
+        padding: 10px 300px;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    
+    
+        .banner-topicos__titulo {
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 22px, 300, variaveis.$ft-branco);
+            padding: 10px;
+        }
+    
+        .banner-topicos__itens {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+    
+            .banner-topicos__item {
+                margin: .3em;
+                text-align: center;
+                text-decoration: none;
+                background-color: variaveis.$laranja;
+                border: none;
+                padding: 20px;
+    
+                a {
+                    @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 20px, 700, variaveis.$ft-branco);
+                    text-decoration:none;
+                }
+            }
+        }
+    }
+
+    .banner-email {
+        background: variaveis.$branco;
+        padding: 32px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    
+        .banner-email__titulo {
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 22px, 700, variaveis.$ft-azul);
+        }
+    
+        .banner-email__texto {
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 20px, 500, variaveis.$ft-azul);
+            @include mixins.fonte-degrade();
+        }
+    
+        .banner-email__pesquisa {
+            padding: 1em;
+            width: 50%;
+            border: 1px solid variaveis.$azul;
+            border-radius: 70px;
+            background-color: transparent;
+            color: variaveis.$azul;
+    
+            
+    
+            &::placeholder {
+                color: variaveis.$azul;
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$ft-azul);
+                background: url(../assets/Email.svg);
+                background-repeat: no-repeat;
+                background-position: 1em;
+                text-align: center;
+            }
+        }
+    }
+}
