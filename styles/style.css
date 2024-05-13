@@ -303,13 +303,13 @@ body h1 {
 }
 .card .card__descricao {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 .card .card__descricao .descricao {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .card .card__descricao .descricao .descriacao__estrelas-titulo {
   width: 50%;

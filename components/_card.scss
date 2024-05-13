@@ -13,13 +13,14 @@
 
     .card__descricao {
         display: flex;
-        gap: 20px;
+        
+        justify-content: space-between;
         margin-bottom: 30px;
 
         .descricao {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-between;
 
             .descriacao__estrelas-titulo {
                 width: 50%;
