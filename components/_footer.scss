@@ -34,11 +34,15 @@
             }
 
             .rodape__links__item {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$ft-cinza-dark);
                 width: 100%;
+                
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    text-decoration: none;
+                    @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$ft-cinza-dark);
+                }
             }
         }
         display: none;
