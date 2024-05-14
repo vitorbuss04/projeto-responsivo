@@ -2,44 +2,58 @@
 @use '../abstract/variaveis';
 @use '../abstract/mixins';
 
-.carrossel__titulo {
-    color: variaveis.$laranja;
-    background: variaveis.$branco;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 16px;
-    @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 20px, 700, variaveis.$ft-laranja);
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.014);
-}
-
-
-
-.swiper-wrapper {
-    .swiper-slide{
-        img {
-            width: 100%;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
-        }
+.carrossel {
+    .carrossel__titulo {
+        color: variaveis.$laranja;
+        background: variaveis.$branco;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 16px;
+        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 20px, 700, variaveis.$ft-laranja);
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.014);
     }
-}
 
-.swiper-button-prev, .swiper-button-next {
-    display: none;
-}
 
-.swiper-pagination {
-    position: initial;
-    margin: .5em 0;
-}
 
-@media screen and (min-width: 1024px) {
-
-    .swiper {
-        width: 50%;
+    .swiper-wrapper {
+        .swiper-slide{
+            img {
+                width: 100%;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
+            }
+        }
     }
 
     .swiper-button-prev, .swiper-button-next {
-        display: block;
+        display: none;
+    }
+
+    .swiper-pagination {
+        position: initial;
+        margin: .5em 0;
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        .swiper {
+            width: 50%;
+            border-radius: 20px;
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 75%;
+                }
+            }
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+            display: block;
+            position: absolute;
+            top: 62%;
+        }
+
     }
 }

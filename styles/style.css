@@ -452,7 +452,7 @@ body h1 {
     text-align: center;
   }
 }
-.carrossel__titulo {
+.carrossel .carrossel__titulo {
   color: #EB9B00;
   background: #FFFFFF;
   text-align: center;
@@ -464,30 +464,37 @@ body h1 {
   color: #EB9B00;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.014);
 }
-
-.swiper-wrapper .swiper-slide img {
+.carrossel .swiper-wrapper .swiper-slide img {
   width: 100%;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.233);
 }
-
-.swiper-button-prev, .swiper-button-next {
+.carrossel .swiper-button-prev, .carrossel .swiper-button-next {
   display: none;
 }
-
-.swiper-pagination {
+.carrossel .swiper-pagination {
   position: initial;
   margin: 0.5em 0;
 }
-
 @media screen and (min-width: 1024px) {
-  .swiper {
+  .carrossel .swiper {
     width: 50%;
+    border-radius: 20px;
   }
-  .swiper-button-prev, .swiper-button-next {
+  .carrossel .swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  .carrossel .swiper .swiper-slide img {
+    width: 75%;
+  }
+  .carrossel .swiper-button-prev, .carrossel .swiper-button-next {
     display: block;
+    position: absolute;
+    top: 62%;
   }
 }
+
 .card {
   background-color: #FFFFFF;
   margin: 20px;
