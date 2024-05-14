@@ -452,6 +452,9 @@ body h1 {
     text-align: center;
   }
 }
+.carrossel {
+  position: relative;
+}
 .carrossel .carrossel__titulo {
   color: #EB9B00;
   background: #FFFFFF;
@@ -491,7 +494,7 @@ body h1 {
   .carrossel .swiper-button-prev, .carrossel .swiper-button-next {
     display: block;
     position: absolute;
-    top: 62%;
+    top: 32%;
   }
 }
 

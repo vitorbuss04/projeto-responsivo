@@ -3,6 +3,7 @@
 @use '../abstract/mixins';
 
 .carrossel {
+    position: relative;
     .carrossel__titulo {
         color: variaveis.$laranja;
         background: variaveis.$branco;
@@ -52,7 +53,7 @@
         .swiper-button-prev, .swiper-button-next {
             display: block;
             position: absolute;
-            top: 62%;
+            top: 32%;
         }
 
     }
