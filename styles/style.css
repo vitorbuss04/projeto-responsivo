@@ -98,7 +98,6 @@ body h1 {
   font-weight: 500;
   color: #002f52;
   text-decoration: none;
-  text-transform: uppercase;
   background: linear-gradient(97deg, #002F52, #326589);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -150,7 +149,6 @@ body h1 {
     font-weight: 500;
     color: #002f52;
     text-decoration: none;
-    text-transform: uppercase;
   }
   .cabecalho .container__botao:checked ~ .lista-menu {
     display: block;
@@ -182,7 +180,6 @@ body h1 {
     font-size: 26px;
     font-weight: 400;
     color: #000000;
-    text-transform: uppercase;
   }
   .cabecalho .coracao {
     display: none;

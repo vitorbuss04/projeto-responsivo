@@ -36,7 +36,7 @@
                 .lista-menu__link {
                     @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 500, variaveis.$ft-azul);
                     text-decoration: none;
-                    text-transform: uppercase;
+       
                     background: variaveis.$degrade-menu;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -100,7 +100,7 @@
                 .lista-menu__link {
                     @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 26px, 500, variaveis.$ft-azul);
                     text-decoration: none;
-                    text-transform: uppercase;
+                    
                     
                     
                 }
@@ -135,7 +135,6 @@
                 .opcoes__item , .opcoes__link{
                     text-decoration: none;
                     @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 26px, 400, variaveis.$ft-preto);
-                    text-transform: uppercase;
                 }
             }
         .coracao {
