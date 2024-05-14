@@ -5,11 +5,57 @@
 
 .rodape {
     padding: 20px;
-    border-top: 2px solid variaveis.$azul;
+    border-top: 1px solid variaveis.$azul;
     background-color: variaveis.$branco;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     
     .rodape__texto {
         @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 400, variaveis.$ft-azul);
         @include mixins.fonte-degrade();
+    }
+
+    .rodape__container {
+        display: flex;
+        width: 80%;
+        justify-content: flex-end;
+        gap: 50px;
+
+        
+        .rodape__links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .rodape__links__titulo {
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$ft-cinza-light);
+                margin-bottom: 20px;
+            }
+
+            .rodape__links__item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$ft-cinza-dark);
+                width: 100%;
+            }
+        }
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        align-items: flex-start;
+        padding: 50px 30px;
+
+        .rodape__texto {
+            font-size: 24px;
+        }
+
+        .rodape__container {
+            display: flex;
+        }
     }
 }

@@ -166,7 +166,7 @@
             <div class="card__descricao">
                 <!-- 1ª coluna -->
                 <div class="descricao">
-                    <img src="assets/Estrelinhas.svg" alt="cinco estrelas" class="descriacao__estrelas-titulo">
+                    <img src="assets/Estrelinhas.svg" alt="cinco estrelas" class="descricao__estrelas-titulo">
                     <h3 class="descricao__titulo">Autora do Mês</h3>
                     <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
                     <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
@@ -227,13 +227,93 @@
     </section>
 
     <section class="banner-email">
-        <h2 class="banner-email__titulo">Fique por dentro das novidades!</h2>
-        <p class="banner-email__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
-        <input type="search" class="banner-email__pesquisa" placeholder="Cadastre seu e-mail">
+        <div class="banner-email__texto">
+            <h2 class="banner-email__titulo">Fique por dentro das novidades!</h2>
+            <p class="banner-email__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <div class="banner-email__email">
+            <input type="search" class="banner-email__pesquisa" placeholder="Cadastre seu e-mail">
+        </div>
     </section>
 
     <footer class="rodape">
-        <p class="rodape__texto">Vítor Buss</p>
+        <p class="rodape__texto">Grupo Alura</p>
+        <div class="rodape__container">
+            <ul class="rodape__links educacao">
+                <h3 class="rodape__links__titulo">EDUCACAO</h3>
+                <li class="rodape__links__item">
+                    <img src="assets/Caelum.svg" alt="Logo Caelum">
+                    <p>Caelum</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/CasaDoCodigo.svg" alt="Logo casa do Código">
+                    <p>Casa do Codigo</p>
+                </li>
+            </ul>
+            <ul class="rodape__links educacao-online">
+                <h3 class="rodape__links__titulo">EDUCACAO ONLINE</h3>
+                <li class="rodape__links__item">
+                    <img src="assets/Alura.svg" alt="Logo alura">
+                    <p>Alura</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/AluraEmpresas.svg" alt="Logo alura para empresas">
+                    <p>Alura Para Empresas</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/AluraLATAM.svg" alt="Logo alura Latam">
+                    <p>Alura LATAM</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/AluraStart.svg" alt="Logo alura start">
+                    <p>Alura Start</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/MusicDot.svg" alt="Logo Music Dot">
+                    <p>MusicDot</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/AluraLingua.svg" alt="Logo Alura Língua">
+                    <p>Alura Língua</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/PM3.svg" alt="Logo PM3">
+                    <p>PM3</p>
+                </li>
+            </ul>
+            <ul class="rodape__links comunidade">
+                <h3 class="rodape__links__titulo">COMUNIDADE</h3>
+                <li class="rodape__links__item">
+                    <img src="assets/HipstersTech.svg" alt="Logo Hipsters ponto Tech">
+                    <p>Hipsters ponto Tech</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/ScubaDev.svg" alt="Logo ScubaDev">
+                    <p>Scuba Dev</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/LayersTech.svg" alt="Logo Layers ponto Tech">
+                    <p>Layers ponto Tech</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/LikeABoss.svg" alt="Logo like a boss">
+                    <p>Like a Boss</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/CarreiraSemFronteira.svg" alt="Logo carreira sem fronteira">
+                    <p>Carreira sem Fronteira</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/HipstersJobs.svg" alt="Logo hipsters ponto jobs">
+                    <p>Hipsters ponto Jobs</p>
+                </li>
+                <li class="rodape__links__item">
+                    <img src="assets/GUJ.svg" alt="Logo guj">
+                    <p>GUJ</p>
+                </li>
+            </ul>
+        </div>
+
     </footer>
 
 
@@ -244,7 +324,6 @@
 
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-      
         const swiper = new Swiper('.swiper', {
             speed: 400,
             spaceBetween: 10,
@@ -253,7 +332,13 @@
                 el: '.swiper-pagination',
                 type: 'bullets',
               },
-          })
+              centeredSlides: true,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              initialSlide: 1,
+          });
       </script>
 </body>
 </html>

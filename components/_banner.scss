@@ -108,6 +108,7 @@
         border-radius: 70px;
         background-color: transparent;
         color: variaveis.$azul;
+        width: 85%;
 
         
 
@@ -140,6 +141,11 @@
 
         .banner__pesquisa {
             width: 50%;
+            height: 60px;
+        }
+
+        &::placeholder {
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 20px, 400, variaveis.$ft-branco);
         }
     }
 
@@ -171,10 +177,10 @@
                 text-decoration: none;
                 background-color: variaveis.$laranja;
                 border: none;
-                padding: 30px;
+                padding: 20px;
     
                 a {
-                    @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 27px, 700, variaveis.$ft-branco);
+                    @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 23px, 700, variaveis.$ft-branco);
                     text-decoration:none;
                 }
             }
@@ -184,10 +190,11 @@
     .banner-email {
         background: variaveis.$branco;
         padding: 32px 30px;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
     
     
         .banner-email__titulo {

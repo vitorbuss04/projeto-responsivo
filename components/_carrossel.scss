@@ -12,9 +12,7 @@
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.014);
 }
 
-.swiper {
-    padding: 0 20px 20px 20px;
-}
+
 
 .swiper-wrapper {
     .swiper-slide{
@@ -33,4 +31,15 @@
 .swiper-pagination {
     position: initial;
     margin: .5em 0;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .swiper {
+        width: 50%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+    }
 }

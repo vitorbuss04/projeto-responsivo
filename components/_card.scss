@@ -20,9 +20,10 @@
         .descricao {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            gap: 10px;
+            max-width: 400px;
 
-            .descriacao__estrelas-titulo {
+            .descricao__estrelas-titulo {
                 width: 50%;
             }
 
@@ -67,6 +68,32 @@
             border: none;
             padding: 20px 34px;
             @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$ft-branco)
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    .banner-email {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+
+        .banner-email__texto {
+            max-width: 400px;
+        }
+
+        .banner-email__email {
+            width: 50%;
+
+            .banner-email__pesquisa {
+                width: 100%;
+            }
         }
     }
 }
