@@ -13,6 +13,7 @@
     
     .rodape__texto {
         @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 400, variaveis.$ft-azul);
+        font-size: clamp(.1rem, 1.3rem + 1vw, 2.5rem);
         @include mixins.fonte-degrade();
     }
 
@@ -30,11 +31,16 @@
 
             .rodape__links__titulo {
                 @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$ft-cinza-light);
+                font-size: clamp(.5rem, .7rem + 1vw, 1.5rem);
                 margin-bottom: 20px;
             }
 
             .rodape__links__item {
                 width: 100%;
+
+                img {
+                    width: 3vw;
+                }
                 
                 a {
                     display: flex;
@@ -42,6 +48,7 @@
                     gap: 10px;
                     text-decoration: none;
                     @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$ft-cinza-dark);
+                    font-size: clamp(.5rem, .7rem + 1vw, 1.5rem);
                 }
             }
         }
@@ -56,6 +63,7 @@
 
         .rodape__texto {
             font-size: 24px;
+            font-size: clamp(.1rem, 1.3rem + 1vw, 2.5rem);
         }
 
         .rodape__container {

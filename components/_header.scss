@@ -117,6 +117,7 @@
 
         .container__titulo {
             @include mixins.ff-fs-fw-c(variaveis.$ft-titulo, 30px, 400, variaveis.$preto);
+            font-size: clamp(.1rem, 1.3rem + 1vw, 2.5rem);
             height: 80%;
             display: flex;
             align-items: center;
@@ -135,6 +136,7 @@
                 .opcoes__item , .opcoes__link{
                     text-decoration: none;
                     @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 26px, 400, variaveis.$ft-preto);
+                    font-size: clamp(.1rem, 1.3rem + 1vw, 2.5rem);
                 }
             }
         .coracao {

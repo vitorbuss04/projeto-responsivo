@@ -30,20 +30,23 @@
             .descricao__titulo {
                 margin: .3em 0;
                 @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 15px, 700, variaveis.$ft-laranja);
+                font-size: clamp(.9em, 1.1em + 1vw, 1.7em);
             }
 
             .descricao__titulo-livro {
                 margin: .3em 0;
                 @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 15px, 700, variaveis.$ft-azul);
+                font-size: clamp(.8em, 1em + 1vw, 1.6em);
             }
 
             .descricao__texto {
                 margin: .3em 0;
                 @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 13px, 400, variaveis.$ft-azul);
+                font-size: clamp(.7em, .9em + 1vw, 1.5em);
             }
 
             .descricao__imagem {
-                width: 100%;
+                max-width: 100%;
             }
         }
     }
@@ -67,7 +70,8 @@
             background-color: variaveis.$laranja;
             border: none;
             padding: 20px 34px;
-            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$ft-branco)
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$ft-branco);
+            font-size: clamp(.7em, .9em + 1vw, 1.5em);
         }
     }
 }
@@ -76,6 +80,24 @@
     .card {
         width: 50%;
         margin: 20px auto;
+
+        .descricao__titulo {
+            margin: .3em 0;
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 15px, 700, variaveis.$ft-laranja);
+            font-size: clamp(1.2em, 1.3em + 1vw, 2em);
+        }
+
+        .descricao__titulo-livro {
+            margin: .3em 0;
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 15px, 700, variaveis.$ft-azul);
+            font-size: clamp(1m, 1.3em + 1vw, 1.8em);
+        }
+
+        .descricao__texto {
+            margin: .3em 0;
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 13px, 400, variaveis.$ft-azul);
+            font-size: clamp(.7em, .9em + 1vw, 1.5em);
+        }
     }
 
     .banner-email {

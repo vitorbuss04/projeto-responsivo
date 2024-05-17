@@ -13,11 +13,13 @@
 
 
     .banner__titulo {
-        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 700, variaveis.$ft-branco);
+        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 1.4rem, 700, variaveis.$ft-branco);
+        font-size: clamp(1em, 1.2em + 1vw, 2.3em);
     }
 
     .banner__texto {
-        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 500, variaveis.$ft-branco);
+        @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 1rem, 500, variaveis.$ft-branco);
+        font-size: clamp(.5em, 1em + .5vw, 1.7em);
 
 
 
@@ -30,12 +32,15 @@
         border-radius: 70px;
         background-color: transparent;
         color: variaveis.$branco;
+        width: 80%;
+        margin: 0 auto;
 
         
 
         &::placeholder {
             color: variaveis.$branco;
-            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$ft-branco);
+            @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 2vw, 400, variaveis.$ft-branco);
+            font-size: clamp(.5em, 1em + .5vw, 1.7em);
             background: url(../assets/Lupa.svg);
             background-repeat: no-repeat;
             background-position: 1em;
@@ -75,6 +80,7 @@
 
             a {
                 @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 700, variaveis.$ft-branco);
+                font-size: clamp(.5em, 1em + .5vw, 1.7em);
                 text-decoration:none;
             }
         }
@@ -94,11 +100,14 @@
 
     .banner-email__titulo {
         @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 18px, 700, variaveis.$ft-azul);
+        font-size: clamp(1em, 1.2em + 1vw, 2.3em);
     }
 
     .banner-email__texto {
         @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 16px, 500, variaveis.$ft-azul);
         @include mixins.fonte-degrade();
+        font-size: clamp(.5em, 1em + .5vw, 1.7em);
+        margin-top: 10px;
     }
 
     .banner-email__pesquisa {
@@ -115,6 +124,7 @@
         &::placeholder {
             color: variaveis.$azul;
             @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$ft-azul);
+            font-size: clamp(.5em, 1em + .5vw, 1.7em);
             background: url(../assets/Email.svg);
             background-repeat: no-repeat;
             background-position: 1em;
@@ -132,11 +142,11 @@
         gap: 30px;
         align-items: center;
         .banner__titulo {
-            font-size: 36px;
+            font-size: clamp(1em, 1.5em + 1vw, 3em);
         }
 
         .banner__texto {
-            font-size: 18px;
+            font-size: clamp(1em, 1.2em + 1vw, 2.3em);
         }
 
         .banner__pesquisa {
@@ -146,6 +156,8 @@
 
         &::placeholder {
             @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 20px, 400, variaveis.$ft-branco);
+            font-size: clamp(.7em, 1em + 1vw, 2em);
+
         }
     }
 
@@ -162,6 +174,7 @@
     
         .banner-topicos__titulo {
             @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 25px, 300, variaveis.$ft-branco);
+            font-size: clamp(1em, 1.5em + 1vw, 3em);
             padding: 10px;
         }
     
@@ -181,6 +194,7 @@
     
                 a {
                     @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 23px, 700, variaveis.$ft-branco);
+                    font-size: clamp(.7em, 1em + 1vw, 2em);
                     text-decoration:none;
                 }
             }
@@ -195,15 +209,18 @@
         flex-direction: row;
         justify-content: center;
         gap: 15px;
+        height: auto;
     
     
         .banner-email__titulo {
             @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 22px, 700, variaveis.$ft-azul);
+            font-size: clamp(1em, 1em + 1vw, 3em);
         }
     
         .banner-email__texto {
             @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 20px, 500, variaveis.$ft-azul);
             @include mixins.fonte-degrade();
+            font-size: clamp(1em, .5em + 1vw, 2em);
         }
     
         .banner-email__pesquisa {
@@ -219,6 +236,7 @@
             &::placeholder {
                 color: variaveis.$azul;
                 @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 14px, 400, variaveis.$ft-azul);
+                font-size: clamp(.7em, 1em + 1vw, 2em);
                 background: url(../assets/Email.svg);
                 background-repeat: no-repeat;
                 background-position: 1em;
