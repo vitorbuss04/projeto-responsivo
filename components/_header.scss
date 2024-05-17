@@ -62,6 +62,10 @@
         margin: 1em;
     }
 
+    .logo {
+        width: 40px;
+    }
+
     .cabecalho__menu-hamburguer {
         width: 32px;
         height: 24px;
@@ -117,7 +121,7 @@
 
         .container__titulo {
             @include mixins.ff-fs-fw-c(variaveis.$ft-titulo, 30px, 400, variaveis.$preto);
-            font-size: clamp(.1rem, 1.3rem + 1vw, 2.5rem);
+            font-size: clamp(.1rem, 1.3rem + 1vw, 2rem);
             height: 80%;
             display: flex;
             align-items: center;
@@ -136,11 +140,32 @@
                 .opcoes__item , .opcoes__link{
                     text-decoration: none;
                     @include mixins.ff-fs-fw-c(variaveis.$ft-textos, 26px, 400, variaveis.$ft-preto);
-                    font-size: clamp(.1rem, 1.3rem + 1vw, 2.5rem);
+                    font-size: clamp(.1rem, 1.3rem + 1vw, 1.7rem);
                 }
             }
         .coracao {
             display: none;
         }
         }
+    }
+
+
+
+    @media  screen and (min-width: 1728px) {
+        .cabecalho {
+
+            .container {
+                .container__titulo {
+                    font-size: clamp(.1rem, 1.8rem + .1vw, 2rem);
+                }
+            }
+    
+            .opcoes {
+                .opcoes__item, .opcoes__link {
+                    font-size: clamp(.5rem, 1.3rem + 1.5vw, 1.7rem);
+                }
+            }
+        }
+
+
     }
