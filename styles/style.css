@@ -192,10 +192,15 @@ body h1 {
 }
 @media screen and (min-width: 1728px) {
   .cabecalho .container .container__titulo {
-    font-size: clamp(0.1rem, 1.8rem + 0.1vw, 2rem);
+    padding: 0;
+    font-size: clamp(0.7rem, 0.1rem + 1vw, 3rem);
+  }
+  .cabecalho .opcoes {
+    margin-right: auto;
+    margin-left: 20px;
   }
   .cabecalho .opcoes .opcoes__item, .cabecalho .opcoes .opcoes__link {
-    font-size: clamp(0.5rem, 1.3rem + 1.5vw, 1.7rem);
+    font-size: clamp(0.7rem, 0.1rem + 1vw, 3rem);
   }
 }
 .banner {
