@@ -60,3 +60,24 @@
 
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .carrossel {
+        .carrossel__titulo {
+            font-size: clamp(.001em, .5em + 1vw, 3em);
+        }
+
+        .carrossel__container {
+            display: flex;
+            align-items: center;
+
+            .swiper {
+                width: 35%;
+            }
+
+            .card {
+                height: 390px;
+            }
+        }
+    }
+}

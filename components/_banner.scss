@@ -247,5 +247,21 @@
 }
 
 @media screen and (min-width: 1728px) {
-    
+    .banner {
+        .banner__titulo {
+            font-size: clamp(.1em, 1em + 1vw, 3em);
+        }
+
+        .banner__texto {
+            font-size: clamp(.1em, .5em + 1vw, 2em);
+        }
+
+        .banner__pesquisa {
+
+        }
+
+        &::placeholder {
+            font-size: clamp(.1em, .5em + 1vw, 2em);
+        }
+    }
 }

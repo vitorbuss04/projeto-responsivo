@@ -491,6 +491,20 @@ body h1 {
     text-align: center;
   }
 }
+@media screen and (min-width: 1728px) {
+  .banner .banner__titulo {
+    font-size: clamp(0.1em, 1em + 1vw, 3em);
+  }
+  .banner .banner__texto {
+    font-size: clamp(0.1em, 0.5em + 1vw, 2em);
+  }
+  .banner::-moz-placeholder {
+    font-size: clamp(0.1em, 0.5em + 1vw, 2em);
+  }
+  .banner::placeholder {
+    font-size: clamp(0.1em, 0.5em + 1vw, 2em);
+  }
+}
 .carrossel .carrossel__titulo {
   color: #EB9B00;
   background: #FFFFFF;
@@ -536,6 +550,21 @@ body h1 {
   }
 }
 
+@media screen and (min-width: 1728px) {
+  .carrossel .carrossel__titulo {
+    font-size: clamp(0.001em, 0.5em + 1vw, 3em);
+  }
+  .carrossel .carrossel__container {
+    display: flex;
+    align-items: center;
+  }
+  .carrossel .carrossel__container .swiper {
+    width: 35%;
+  }
+  .carrossel .carrossel__container .card {
+    height: 390px;
+  }
+}
 .card {
   background-color: #FFFFFF;
   margin: 20px;
@@ -653,6 +682,11 @@ body h1 {
   }
   .banner-email .banner-email__email .banner-email__pesquisa {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .card {
+    max-width: 670px;
   }
 }
 .rodape {
